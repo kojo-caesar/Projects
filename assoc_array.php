@@ -134,7 +134,7 @@ class AssocArray_to_ASCII {
     protected function _printLine() {
         $columnsLines = array();
         foreach ($this->columns as $column) {
-            $columnsLines[] = str_repeat('-', $column['size'] + ($this->padding * 10));
+            $columnsLines[] = str_repeat('-', $column['size'] + ($this->padding * 2));
         }
         $output = implode('+', $columnsLines);
         $output = '+' . $output . '+' . "\n";
